@@ -186,7 +186,7 @@ idx\_detalle\_venta\_producto
 
 
 
-
+enlace al repositorio github https://github.com/scarocca/ecommerce-db-m3-
 
 
 
