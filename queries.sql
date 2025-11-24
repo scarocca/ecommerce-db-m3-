@@ -40,7 +40,7 @@ SELECT c.nombre, COUNT(v.id_venta) AS compras
 FROM clientes c
 JOIN ventas v ON v.id_cliente = c.id_cliente
 GROUP BY c.id_cliente
-HAVING COUNT(v.id_venta) >= 5;
+HAVING COUNT(v.id_venta) >= 2;
 
 -- 8. Total gastado por cliente
 SELECT c.nombre, SUM(v.total) AS total_gastado
@@ -68,5 +68,8 @@ GROUP BY p.nombre
 ORDER BY monto_generado DESC;
 
 
-
+select c.nombre as nombre ,v.id_venta as ventas,v.fecha as fecha
+from clientes c
+join ventas v
+on v.id_cliente = c.id_cliente;
 

@@ -178,9 +178,30 @@ INSERT INTO ventas (fecha, total, id_cliente) VALUES
 ('2025-01-26', 0, 40),
 ('2025-01-27', 0, 42),
 ('2025-01-28', 0, 48),
-('2025-01-30', 0, 50);
-
+('2025-01-30', 0, 50),;
+INSERT INTO ventas (fecha, total, id_cliente) VALUES
+('2025-02-02', 0, 1),
+('2025-04-03', 0, 5),
+('2025-05-05', 0, 12),
+('2025-06-06', 0, 4),
+('2025-08-07', 0, 8),
+('2025-10-08', 0, 3),
+('2025-11-10', 0, 15),
+('2025-02-12', 0, 22),
+('2025-07-13', 0, 7),
+('2025-06-15', 0, 9),
+('2025-04-16', 0, 18),
+('2025-09-18', 0, 10),
+('2025-03-20', 0, 14),
+('2025-09-21', 0, 26),
+('2025-12-22', 0, 30),
+('2025-7-25', 0, 35),
+('2025-04-26', 0, 40),
+('2025-08-27', 0, 42),
+('2025-03-28', 0, 48),
+('2025-09-30', 0, 50);
 ---detalle de cada venta
+select * from ventas;
 
 -- === DETALLE VENTA ===
 -- Venta 1
@@ -280,6 +301,104 @@ VALUES
 -- Venta 20
 INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
 VALUES (1, 20, 87, 79990);
+
+-- Venta 21
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (2, 25, 1, 299990);  -- Samsung A54
+
+-- Venta 22
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES 
+(4, 26, 18, 12990),   -- Mouse Logitech
+(12, 26, 14, 249990);  -- Audífonos Sony
+
+-- Venta 23
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(1, 28, 27, 5990),
+(2, 28, 28, 9990);
+
+-- Venta 24
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (3, 29, 7, 449990);   -- Notebook Asus VivoBook
+
+-- Venta 25
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(4, 32, 11, 199990),  -- Smartwatch Samsung
+(2, 25, 43, 6990);
+
+-- Venta 26
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(1, 26, 31, 39990),
+(10, 26, 32, 89990);
+
+-- Venta 27
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (13, 27, 40, 19990);
+
+-- Venta 28
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (11, 38, 50, 279990);
+
+-- Venta 29
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(2, 29, 17, 29990),
+(1, 39, 16, 39990);
+
+-- Venta 30
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(4, 40, 52, 149990),
+(2, 30, 30, 39990);
+
+-- Venta 31
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (1, 31, 13, 59990);
+
+-- Venta 32
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(1, 29, 84, 24990),
+(1, 32, 85, 39990);
+
+-- Venta 33
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (2, 13, 21, 29990);
+
+-- Venta 34
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (4, 14, 70, 69990);
+
+-- Venta 35
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(1, 35, 73, 49990),
+(1, 25, 17, 29990);
+
+-- Venta 36
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (1, 26, 10, 899990);
+
+-- Venta 37
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (1, 37, 57, 39990);
+
+-- Venta 38
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (1, 28, 2, 899990);   -- iPhone 14
+
+-- Venta 39
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES
+(10, 19, 28, 9990),
+(2, 19, 43, 6990);
+
+-- Venta 40
+INSERT INTO detalle_venta (cantidad, id_venta, id_producto, precio_unitario)
+VALUES (4, 22, 87, 79990);
 
 --recalcular totales
 UPDATE ventas v
